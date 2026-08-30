@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Movie Ticket Booking</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><h1>🎬 Movie Ticket Booking</h1><p>Book your movie tickets quickly and easily</p></header>
+<main><section class="card"><h2>Book Your Movie Ticket</h2>
+<form id="form"><div class="grid">
+<label>Name<input id="name" required></label><label>Email<input id="email" type="email" required></label>
+<label>Phone<input id="phone" required></label><label>Show<select id="show" required></select></label>
+<label>Tickets<input id="tickets" type="number" min="1" max="10" value="1" required></label></div>
+<div id="info"></div><h2 id="cost">Total Cost: ₹0</h2><button>Confirm Booking</button></form></section>
+<section id="result" class="card"></section>
+<section class="card"><h2>Find / Cancel Booking</h2><input id="bid" placeholder="MTB-XXXXXXXX">
+<button onclick="findBooking()">Find</button><button class="danger" onclick="cancelBooking()">Cancel</button><div id="lookup"></div></section>
+<section class="card"><h2>📚 Knowledge Base</h2><p>Project PDFs are stored in the <b>documents/</b> folder.</p></section></main>
+<script src="/script.js"></script></body></html>
